@@ -12,7 +12,7 @@ intervalID = setInterval( function () {
   try {
 console.log(dt(date.result[i].timeStamp * 1000), ti(date.result[i].timeStamp * 1000))
 i ++
-  }catch (e) {console.log('Koniec'), clearInterval(intervalID)}
+  }catch (e) {console.log('End'), clearInterval(intervalID)}
 }, 0))
 
 
