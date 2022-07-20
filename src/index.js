@@ -1,7 +1,9 @@
-const { json } = require('stream/consumers');
+const { json } = require('stream/consumers')
 const funct = require('./config/functions.js')
 const address = require('./config/config.js')
+const fetch = require('node-fetch')
 const a = address.address
+
 
 i = 0
 
