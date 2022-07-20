@@ -7,10 +7,10 @@
 > <br/>
 > <br/>        
 
-> **Setup:** 
-> 1.Install node.js on your computer 
-> 2.Go to /polygonscan, open terminal and install node by "npm i node.js"          
-> 3.Go to /src and run script by "node index.js" in terminal        
+> **Setup:**      
+> 1.Install node.js on your computer         
+> 2.Go to /polygonscan, open terminal and install node by "npm i node.js"              
+> 3.Go to /src and run script by "node index.js" in terminal           
 
 ***Link to polygon contracts:***
 ```
