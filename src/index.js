@@ -14,10 +14,3 @@ console.log(dt(date.result[i].timeStamp * 1000), ti(date.result[i].timeStamp * 1
 i ++
   }catch (e) {console.log('End'), clearInterval(intervalID)}
 }, 0))
-
-
-
-
-
-
-
