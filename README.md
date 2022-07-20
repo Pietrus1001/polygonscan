@@ -10,8 +10,8 @@
 > **Setup:**      
 > 1.Install node.js on your computer      
 > 2.Download all files to your computer      
-> 3.Go to /polygonscan-main, open terminal and install node by command: "npm i node.js"                
-> 4.Go to /src and run script by command : "node index.js" in terminal             
+> 3.Open terminal, go to /polygonscan-main and use command "npm i node.js"             
+> 4.Go to /polygonscan-main/src in terminal and run script by command: "node index.js"          
 
 ***Link to polygon contracts:***
 ```
