@@ -8,16 +8,12 @@
 > <br/>        
 
 > **Setup:**    
-> 1.Install node.js on your computer          
+> 1.Go to /polygonscan, open terminal and install node by "npm i node.js"          
 > 2.Go to /src and run script by "node index.js" in terminal        
 
 ***Link to install Node:***
 ```
 https://nodejs.org/en/
-```
-***Link to polygon contracts:***
-```
-https://polygonscan.com/contractsVerified
 ```
 
 *Thanks for use my bot!!!!*
