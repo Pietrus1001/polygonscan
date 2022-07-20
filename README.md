@@ -1,4 +1,4 @@
-*Polygonscan Bot**
+**Polygonscan Bot**
 
 > **Config**    
 > If you want to set your own contract address go to ***/src/config/config.js*** and change this:  
