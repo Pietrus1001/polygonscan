@@ -6,7 +6,7 @@ function currenttime(data){
 	h = String(h)
 	m = String(m)
 	s = String(s)
-	let time = h + ':' + m + ':' + s + '\n'
+	let time = h + ':' + m + ':' + s
 	return time
 }
 
@@ -24,8 +24,29 @@ function currentdate(data){
 	return date
 }
 
+function bubble(arr, arr2) {
+	var len = arr.length
+  
+	for (var i = 0; i < len ; i++) {
+	  for(var j = 0 ; j < len - i - 1; j++){
+	  if (arr[j] > arr[j + 1]) {
+		var temp = arr[j]
+		arr[j] = arr[j+1]
+		arr[j + 1] = temp
+
+		var temp2 = arr2[j]
+		arr2[j] = arr2[j+1]
+		arr2[j + 1] = temp2
+	  }
+	 }
+	}
+	return arr, arr2
+  }
+
+bu = bubble
 ti = currenttime
 dt = currentdate
 
 module.exports.ti
 module.exports.dt
+module.exports.bu
