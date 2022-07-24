@@ -22,4 +22,3 @@ https://polygonscan.com/contractsVerified
 https://nodejs.org/en/
 ```
 
-*Thanks for using my bot!!!!*
