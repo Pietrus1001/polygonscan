@@ -11,8 +11,6 @@ var values = []
 var outs = 0
 var ins = 0
 
-
-console.log('To może chwilę potrwać :-)')
 fetch('http://api.polygonscan.com/api?module=logs&action=getLogs&address=' + a + '&apikey=NWP8XWDDAGB5MKZVJY6X661BJMA39H2GRE').then(res =>  res.json())
 .then(date => 
   intervalID = setInterval( function () {
@@ -21,6 +19,7 @@ fetch('http://api.polygonscan.com/api?module=logs&action=getLogs&address=' + a +
       {
         fetch('https://api.polygonscan.com/api?module=proxy&action=eth_getTransactionByHash&txhash=' + date.result[i].transactionHash + '&apikey=NWP8XWDDAGB5MKZVJY6X661BJMA39H2GRE').then(res2 => res2.json())
         .then(function(date2) {
+            console.log(i)
             dates[i] = date.result[i].timeStamp * 1000
             if (date2.result.to === '0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45'){
               values[i] = 'OUT ' + (date2.result.value * 1000) / Math.pow(10, 6) 
@@ -30,7 +29,7 @@ fetch('http://api.polygonscan.com/api?module=logs&action=getLogs&address=' + a +
               values[i] = 'IN ' + (date2.result.value * 1000) / Math.pow(10, 6)
               ins ++
             }
-            //console.log(values[i] + ' ' + dates[i])
+            console.log(values[i] + ' ' + dates[i])
             
             })
         .catch (error => {
