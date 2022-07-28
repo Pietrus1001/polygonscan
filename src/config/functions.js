@@ -41,177 +41,177 @@ function currentdatearr(data) {
 	return ([y, m, da])
 	
 }
-function bubble(arr, arr2) {
-	var len = arr.length
+// function bubble(arr, arr2) {
+// 	var len = arr.length
   
-	for (var i = 0; i < len ; i++) {
+// 	for (var i = 0; i < len ; i++) {
 
-	  	for(var j = 0 ; j < len - i - 1; j++){
+// 	  	for(var j = 0 ; j < len - i - 1; j++){
 
-			let datearr1 = currentdatearr(arr[j])
-			let datearr2 = currentdatearr(arr[j+1])
-			let timearr1 = currenttimearr(arr[j])
-			let timearr2 = currenttimearr(arr[j+1])
+// 			let datearr1 = currentdatearr(arr[j])
+// 			let datearr2 = currentdatearr(arr[j+1])
+// 			let timearr1 = currenttimearr(arr[j])
+// 			let timearr2 = currenttimearr(arr[j+1])
 
-			if (datearr1[0] == datearr2[0]) {
-				if (datearr1[1] == datearr2[1]) {
-					if (datearr1[2] == datearr2[2]) {
-						if (timearr1[0] == timearr2[0]) {
-							if (timearr1[1] == timearr2[1]) {
-								if (timearr1[2] == timearr2[2]) {
+// 			if (datearr1[0] == datearr2[0]) {
+// 				if (datearr1[1] == datearr2[1]) {
+// 					if (datearr1[2] == datearr2[2]) {
+// 						if (timearr1[0] == timearr2[0]) {
+// 							if (timearr1[1] == timearr2[1]) {
+// 								if (timearr1[2] == timearr2[2]) {
 						
-								} 
-								else if(timearr1[2] > timearr2[2]){
-									var temp = arr[j]
-									arr[j] = arr[j+1]
-									arr[j + 1] = temp
+// 								} 
+// 								else if(timearr1[2] > timearr2[2]){
+// 									var temp = arr[j]
+// 									arr[j] = arr[j+1]
+// 									arr[j + 1] = temp
 									
-									var temp2 = arr2[j]
-									arr2[j] = arr2[j+1]
-									arr2[j + 1] = temp2
-								}
-							} 
-							else if(timearr1[1] > timearr2[1]){
-								var temp = arr[j]
-								arr[j] = arr[j+1]
-								arr[j + 1] = temp
+// 									var temp2 = arr2[j]
+// 									arr2[j] = arr2[j+1]
+// 									arr2[j + 1] = temp2
+// 								}
+// 							} 
+// 							else if(timearr1[1] > timearr2[1]){
+// 								var temp = arr[j]
+// 								arr[j] = arr[j+1]
+// 								arr[j + 1] = temp
 								
-								var temp2 = arr2[j]
-								arr2[j] = arr2[j+1]
-								arr2[j + 1] = temp2
-							}
-						} 
-						else if(timearr1[0] > timearr2[0]){
-							var temp = arr[j]
-							arr[j] = arr[j+1]
-							arr[j + 1] = temp
+// 								var temp2 = arr2[j]
+// 								arr2[j] = arr2[j+1]
+// 								arr2[j + 1] = temp2
+// 							}
+// 						} 
+// 						else if(timearr1[0] > timearr2[0]){
+// 							var temp = arr[j]
+// 							arr[j] = arr[j+1]
+// 							arr[j + 1] = temp
 							
-							var temp2 = arr2[j]
-							arr2[j] = arr2[j+1]
-							arr2[j + 1] = temp2
-						}
-					} 
-					else if(datearr1[2] > datearr2[2]){
-						var temp = arr[j]
-						arr[j] = arr[j+1]
-						arr[j + 1] = temp
+// 							var temp2 = arr2[j]
+// 							arr2[j] = arr2[j+1]
+// 							arr2[j + 1] = temp2
+// 						}
+// 					} 
+// 					else if(datearr1[2] > datearr2[2]){
+// 						var temp = arr[j]
+// 						arr[j] = arr[j+1]
+// 						arr[j + 1] = temp
 						
-						var temp2 = arr2[j]
-						arr2[j] = arr2[j+1]
-						arr2[j + 1] = temp2
-					} 
-				} 
-				else if(datearr1[1] > datearr2[1]){
-				var temp = arr[j]
-				arr[j] = arr[j+1]
-				arr[j + 1] = temp
+// 						var temp2 = arr2[j]
+// 						arr2[j] = arr2[j+1]
+// 						arr2[j + 1] = temp2
+// 					} 
+// 				} 
+// 				else if(datearr1[1] > datearr2[1]){
+// 				var temp = arr[j]
+// 				arr[j] = arr[j+1]
+// 				arr[j + 1] = temp
 				
-				var temp2 = arr2[j]
-				arr2[j] = arr2[j+1]
-				arr2[j + 1] = temp2
-				} 
-			}
-			else if(datearr1[0] > datearr2[0]){
-				var temp = arr[j]
-				arr[j] = arr[j+1]
-				arr[j + 1] = temp
+// 				var temp2 = arr2[j]
+// 				arr2[j] = arr2[j+1]
+// 				arr2[j + 1] = temp2
+// 				} 
+// 			}
+// 			else if(datearr1[0] > datearr2[0]){
+// 				var temp = arr[j]
+// 				arr[j] = arr[j+1]
+// 				arr[j + 1] = temp
 				
-				var temp2 = arr2[j]
-				arr2[j] = arr2[j+1]
-				arr2[j + 1] = temp2
-			}
-	 	}
-	}
-	return arr
-}
+// 				var temp2 = arr2[j]
+// 				arr2[j] = arr2[j+1]
+// 				arr2[j + 1] = temp2
+// 			}
+// 	 	}
+// 	}
+// 	return arr
+// }
 
 
-function bubble2(arr, arr2) {
-	var len = arr.length
+// function bubble2(arr, arr2) {
+// 	var len = arr.length
 
-	for (var i = 0; i < len ; i++) {
+// 	for (var i = 0; i < len ; i++) {
 
-		for(var j = 0 ; j < len - i - 1; j++){
+// 		for(var j = 0 ; j < len - i - 1; j++){
 
-		  let datearr1 = currentdatearr(arr[j])
-		  let datearr2 = currentdatearr(arr[j+1])
-		  let timearr1 = currenttimearr(arr[j])
-		  let timearr2 = currenttimearr(arr[j+1])
+// 		  let datearr1 = currentdatearr(arr[j])
+// 		  let datearr2 = currentdatearr(arr[j+1])
+// 		  let timearr1 = currenttimearr(arr[j])
+// 		  let timearr2 = currenttimearr(arr[j+1])
 
-		  if (datearr1[0] == datearr2[0]) {
-			  if (datearr1[1] == datearr2[1]) {
-				  if (datearr1[2] == datearr2[2]) {
-					  if (timearr1[0] == timearr2[0]) {
-						  if (timearr1[1] == timearr2[1]) {
-							  if (timearr1[2] == timearr2[2]) {
+// 		  if (datearr1[0] == datearr2[0]) {
+// 			  if (datearr1[1] == datearr2[1]) {
+// 				  if (datearr1[2] == datearr2[2]) {
+// 					  if (timearr1[0] == timearr2[0]) {
+// 						  if (timearr1[1] == timearr2[1]) {
+// 							  if (timearr1[2] == timearr2[2]) {
 					  
-							  } 
-							  else if(timearr1[2] > timearr2[2]){
-								  var temp = arr[j]
-								  arr[j] = arr[j+1]
-								  arr[j + 1] = temp
+// 							  } 
+// 							  else if(timearr1[2] > timearr2[2]){
+// 								  var temp = arr[j]
+// 								  arr[j] = arr[j+1]
+// 								  arr[j + 1] = temp
 								  
-								  var temp2 = arr2[j]
-								  arr2[j] = arr2[j+1]
-								  arr2[j + 1] = temp2
-							  }
-						  } 
-						  else if(timearr1[1] > timearr2[1]){
-							  var temp = arr[j]
-							  arr[j] = arr[j+1]
-							  arr[j + 1] = temp
+// 								  var temp2 = arr2[j]
+// 								  arr2[j] = arr2[j+1]
+// 								  arr2[j + 1] = temp2
+// 							  }
+// 						  } 
+// 						  else if(timearr1[1] > timearr2[1]){
+// 							  var temp = arr[j]
+// 							  arr[j] = arr[j+1]
+// 							  arr[j + 1] = temp
 							  
-							  var temp2 = arr2[j]
-							  arr2[j] = arr2[j+1]
-							  arr2[j + 1] = temp2
-						  }
-					  } 
-					  else if(timearr1[0] > timearr2[0]){
-						  var temp = arr[j]
-						  arr[j] = arr[j+1]
-						  arr[j + 1] = temp
+// 							  var temp2 = arr2[j]
+// 							  arr2[j] = arr2[j+1]
+// 							  arr2[j + 1] = temp2
+// 						  }
+// 					  } 
+// 					  else if(timearr1[0] > timearr2[0]){
+// 						  var temp = arr[j]
+// 						  arr[j] = arr[j+1]
+// 						  arr[j + 1] = temp
 						  
-						  var temp2 = arr2[j]
-						  arr2[j] = arr2[j+1]
-						  arr2[j + 1] = temp2
-					  }
-				  } 
-				  else if(datearr1[2] > datearr2[2]){
-					  var temp = arr[j]
-					  arr[j] = arr[j+1]
-					  arr[j + 1] = temp
+// 						  var temp2 = arr2[j]
+// 						  arr2[j] = arr2[j+1]
+// 						  arr2[j + 1] = temp2
+// 					  }
+// 				  } 
+// 				  else if(datearr1[2] > datearr2[2]){
+// 					  var temp = arr[j]
+// 					  arr[j] = arr[j+1]
+// 					  arr[j + 1] = temp
 					  
-					  var temp2 = arr2[j]
-					  arr2[j] = arr2[j+1]
-					  arr2[j + 1] = temp2
-				  } 
-			  } 
-			  else if(datearr1[1] > datearr2[1]){
-			  var temp = arr[j]
-			  arr[j] = arr[j+1]
-			  arr[j + 1] = temp
+// 					  var temp2 = arr2[j]
+// 					  arr2[j] = arr2[j+1]
+// 					  arr2[j + 1] = temp2
+// 				  } 
+// 			  } 
+// 			  else if(datearr1[1] > datearr2[1]){
+// 			  var temp = arr[j]
+// 			  arr[j] = arr[j+1]
+// 			  arr[j + 1] = temp
 			  
-			  var temp2 = arr2[j]
-			  arr2[j] = arr2[j+1]
-			  arr2[j + 1] = temp2
-			  } 
-		  }
-		  else if(datearr1[0] > datearr2[0]){
-			  var temp = arr[j]
-			  arr[j] = arr[j+1]
-			  arr[j + 1] = temp
+// 			  var temp2 = arr2[j]
+// 			  arr2[j] = arr2[j+1]
+// 			  arr2[j + 1] = temp2
+// 			  } 
+// 		  }
+// 		  else if(datearr1[0] > datearr2[0]){
+// 			  var temp = arr[j]
+// 			  arr[j] = arr[j+1]
+// 			  arr[j + 1] = temp
 			  
-			  var temp2 = arr2[j]
-			  arr2[j] = arr2[j+1]
-			  arr2[j + 1] = temp2
-		  }
-	   }
-  }
-	return arr2
-}
+// 			  var temp2 = arr2[j]
+// 			  arr2[j] = arr2[j+1]
+// 			  arr2[j + 1] = temp2
+// 		  }
+// 	   }
+//   }
+// 	return arr2
+// }
 
-bu2 = bubble2
-bu = bubble
+// bu2 = bubble2
+// bu = bubble
 ti = currenttime
 dt = currentdate
 

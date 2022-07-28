@@ -38,8 +38,8 @@ if ( b === '2'){
               })
           .catch (error => {
             clearInterval(intervalID)
-            // values = bu2(dates, values)
-            // dates = bu(dates, values)
+                // values = bu2(dates, values)
+                // dates = bu(dates, values)
             for (let j = 0; j < dates.length; j++){ dates[j] = dt(dates[j]) + ' ' + ti(dates[j])}
             for (let j = 0; j < dates.length; j++){ console.log(values[j] + ' ' + dates[j])}
             console.log("IN tokens: " + ins)
@@ -56,5 +56,5 @@ if ( b === '2'){
 
 
 
-          // if (date2.result.to === '0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45') dates[i] = 'OUT ' + (date2.result.value * 1000) / Math.pow(10, 6), /*date.result[i].transactionHash,*/ dt(date.result[i].timeStamp * 1000), ti(date.result[i].timeStamp * 1000)
-          // else dates[i] = 'IN ' + (date2.result.value * 1000) / Math.pow(10, 6), /*date.result[i].transactionHash,*/ dt(date.result[i].timeStamp * 1000), ti(date.result[i].timeStamp * 1000)
+              // if (date2.result.to === '0x68b3465833fb72a70ecdf485e0e4c7bd8665fc45') dates[i] = 'OUT ' + (date2.result.value * 1000) / Math.pow(10, 6), /*date.result[i].transactionHash,*/ dt(date.result[i].timeStamp * 1000), ti(date.result[i].timeStamp * 1000)
+              // else dates[i] = 'IN ' + (date2.result.value * 1000) / Math.pow(10, 6), /*date.result[i].transactionHash,*/ dt(date.result[i].timeStamp * 1000), ti(date.result[i].timeStamp * 1000)
