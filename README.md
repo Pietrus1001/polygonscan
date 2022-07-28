@@ -3,7 +3,12 @@
 > **Config**    
 > If you want to set your own contract address go to ***/src/config/config.js*** and change this:  
 >     
-> ***address: 'Your address'***       
+> ***address: 'Your address'***      
+>       
+>     
+> If you want to change bot's mode go to ***/src/config/mode.js and change this:    
+>   
+> ***mode: 'mode number'***
 > <br/>
 > <br/>        
 
