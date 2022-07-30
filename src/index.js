@@ -41,7 +41,7 @@ if ( b === '2'){
                 // values = bu2(dates, values)
                 // dates = bu(dates, values)
             for (let j = 0; j < dates.length; j++){ dates[j] = dt(dates[j]) + ' ' + ti(dates[j])}
-            for (let j = 0; j < dates.length; j++){ console.log(values[j] + ' ' + dates[j])}
+            for (let j = 0; j < dates.length; j++){ console.log(j + 1 + '. Transakcjia o wartości: ' + values[j] + 'która miała miejsce: ' + dates[j])}
             console.log("IN tokens: " + ins)
             console.log("OUT tokens: " + outs)
             console.log('End')
